@@ -44,13 +44,17 @@
     <div id="site-wrapper">
       <nav>
         <button>This interior</button>
-        <a><i class="fa-solid fa-bars fa-2x"></i></a></i>
-        <ul>
+        <a href="javascript:void(0)"><i class="fa-solid fa-bars fa-2x closebtn" onclick="openNav()"></i></a>
+        <div  id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></a>
+          <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Collection</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
+        </div>
+        
       </nav>
       <main>
         <div id="text-wrapper">
@@ -80,5 +84,15 @@
       </main>
       <footer>created by <u>spaprocki</u> - devChallenges.io</footer>
     </div>
+
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "100vw";
+      }
+      
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0vw";
+      }
+      </script>
   </body>
 </html>
