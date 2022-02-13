@@ -21,19 +21,30 @@
       rel="stylesheet"
     />
 
+    <link href="style.css" rel="stylesheet" />
+
+    <script
+      src="https://kit.fontawesome.com/92258a8daa.js"
+      crossorigin="anonymous"
+    ></script>
+
     <link
-      href="style.css"
+      href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
       rel="stylesheet"
+      type="text/css"
     />
 
-    <title>Devchallenges</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
-  
+    <title>Devchallenges</title>
   </head>
   <body>
     <div id="site-wrapper">
       <nav>
         <button>This interior</button>
+        <a><i class="fa-solid fa-bars fa-2x"></i></a></i>
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Collection</a></li>
@@ -44,23 +55,26 @@
       <main>
         <div id="text-wrapper">
           <h1>Modern interior</h1>
-          <p>A full-Service residential & 
-            commercial interior design and 
-            staging company offering 
-            professional organizing & 
-            eco-services.</p>
-          <a href="#">Read more</a>
-          <i></i>
+          <p>
+            A full-Service residential & commercial interior design and staging
+            company offering professional organizing & eco-services.
+          </p>
+          <a href="#">Read more <i class="fa fa-regular fa-right-long"></i></a>
         </div>
-        <div id="image-wrapper">
-          <img src="images/photo1.png" alt="A photo of a well-designed room">
-          <div id="designer-stamp">
-            <div id="designer-embed">
-              <img src="images/photo2.png">
-              <p>Aliza Webber</p>
-              <p>Interior designer</p>
+        <div id="images-wrapper">
+          <img src="images/photo1.png" alt="A photo of a well-designed room" />
+          <div id="card">
+            <div id="card-wrapper">
+              <img src="images/photo2.png" />
+              <div id="name-and-job">
+                <p id="name">Aliza Webber</p>
+                <p id="job">Interior designer</p>
+              </div>
             </div>
-            <p>Designed in 2020 by Aliza Webber</p>
+            <p id="card-text">
+              Designed in 2020 by <br />
+              Aliza Webber
+            </p>
           </div>
         </div>
       </main>
