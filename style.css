@@ -4,8 +4,7 @@
   font-style: normal;
 }
 
-a,
-button {
+a {
   cursor: pointer;
 }
 
@@ -25,7 +24,6 @@ body {
   margin: auto;
   display: flex;
   flex-direction: column;
-  background-color: #828282;
 }
 
 nav {
@@ -55,10 +53,6 @@ nav {
 }
 
 #list-wrapper {
-  /*display: flex;
-  flex-direction: column;
-  height: 100vh;
-  justify-content: center;*/
   margin-top: 57vw;
 }
 
@@ -115,7 +109,10 @@ hr {
   margin-left: 89vw;
 }
 
-button {
+#logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 27.5vw;
   height: 8.3vw;
   background: #181719;
