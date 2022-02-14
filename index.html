@@ -36,7 +36,10 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;700&family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Devchallenges</title>
   </head>
@@ -44,17 +47,32 @@
     <div id="site-wrapper">
       <nav>
         <button>This interior</button>
-        <a href="javascript:void(0)"><i class="fa-solid fa-bars fa-2x closebtn" onclick="openNav()"></i></a>
-        <div  id="myNav" class="overlay">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></a>
-          <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Collection</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
+        <a id="open-button" href="javascript:void(0)">
+          <i class="fa-solid fa-bars fa-2x closebtn" onclick="openNav()"></i>
+        </a>
+        <div id="menu">
+          <a id="close-button" href="javascript:void(0)" onclick="closeNav()">
+            <i class="fa-solid fa-xmark"></i>
+          </a>
+          <div id="list-wrapper">
+             <ul>
+            <li id="home" >
+              <a href="#">Home</a>
+              <div id="line"></div>
+            </li>
+            <li>
+              <a href="#">Collection</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+          </div>
+         
         </div>
-        
       </nav>
       <main>
         <div id="text-wrapper">
@@ -87,12 +105,12 @@
 
     <script>
       function openNav() {
-        document.getElementById("myNav").style.width = "100vw";
+        document.getElementById('menu').style.width = '100vw';
       }
-      
+
       function closeNav() {
-        document.getElementById("myNav").style.width = "0vw";
+        document.getElementById('menu').style.width = '0vw';
       }
-      </script>
+    </script>
   </body>
 </html>

@@ -4,17 +4,28 @@
   font-style: normal;
 }
 
+a,
+button {
+  cursor: pointer;
+}
+
+a, a:hover, a:focus {
+  color: #f1f1f1;
+}
+
 body {
-    background: #181719;
-    color: #FFFFFF;
-    font-style: normal;
+  background: #181719;
+  color: #ffffff;
+  font-style: normal;
 }
 
 #site-wrapper {
   width: 93vw;
+  height: 207vw;
   margin: auto;
   display: flex;
   flex-direction: column;
+  background-color: #828282;
 }
 
 nav {
@@ -24,57 +35,92 @@ nav {
   margin-top: 5vw;
 }
 
-.overlay {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
-    overflow-x: hidden;
-    transition: 0.5s;
-  }
+#open-button i {
+  color: white;
+  font-size: 5vw;
+}
 
-  .overlay-content {
-    position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-  }
+#menu {
+  display: flex;
+  flex-direction: column;
+  height: 207vw;
+  width: 0;
+  position: absolute;
+  overflow-x: hidden;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  transition: 0.5s;
+}
 
-  .overlay li a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
-  }
-  
-  .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-  }
+#list-wrapper {
+  /*display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;*/
+  margin-top: 57vw;
+}
 
-nav a, button {
-    cursor:pointer;
+ul {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  text-align: center;
+  color: white;
+  transition: 0.3s;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 4.8vw;
+  margin-bottom: 8.5vw;
+  width: fit-content;
+}
+
+li a {
+  text-decoration: none;
+}
+
+#home a {
+  margin-top: 2.1vw;
+  font-weight: 700;
+}
+
+hr {
+  height: 0.53vw;
+  color: white;
+  background-color: white;
+}
+
+#line {
+  height: 0px;
+  border: 2px solid #FFFFFF;
+  background-color: white;
+  margin-top: 2.1vw;
+}
+
+#home {
+  margin-bottom: 6.4vw;
+}
+
+#close-button i {
+  font-size: 5.9vw;
+  margin-top: 5.8vw;
+  margin-left: 89vw;
 }
 
 button {
   width: 27.5vw;
   height: 8.3vw;
   background: #181719;
-  color: #FFFFFF;
-  border: 1px solid #FFFFFF;
+  color: #ffffff;
+  border: 1px solid #ffffff;
   font-family: Crimson Pro;
   font-weight: 200;
   font-size: 3.7vw;
@@ -82,58 +128,59 @@ button {
 }
 
 #text-wrapper {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10vw;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10vw;
 }
 
 h1 {
-    font-family: Lora;
-font-weight: 500;
-font-size: 9.6vw;
+  font-family: Lora;
+  font-weight: 500;
+  font-size: 9.6vw;
 }
 
 #text-wrapper p {
-    font-family: Montserrat;
-    font-size: 3.7vw;
-    margin-top: 6.7vw;
+  font-family: Montserrat;
+  font-size: 3.7vw;
+  margin-top: 6.7vw;
 }
 
 #text-wrapper a {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 3.7vw;
-    margin-top: 6.7vw;
-    color: white;
-    text-decoration: none;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3.7vw;
+  margin-top: 6.7vw;
+  color: white;
+  text-decoration: none;
 }
 
 #text-wrapper a i {
-    width: 5vw;
-    height: 1.7vw;
+  width: 5vw;
+  height: 1.7vw;
 }
 
 #images-wrapper {
-    position: relative;
+  position: relative;
   top: 6.7vw;
   left: 0;
 }
 
+
 #images-wrapper img {
-    position: relative;
+  position: relative;
   top: 0;
   left: 0;
   width: 93.6vw;
-  height:auto;
+  height: auto;
 }
 
 #card {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    width: 80vw;
-    height: 36.8vw;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 80vw;
+  height: 36.8vw;
   top: 57vw;
   left: 10.6vw;
   background: #181719;
@@ -141,51 +188,51 @@ font-size: 9.6vw;
 }
 
 #card-wrapper {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 #card-wrapper img {
-    width: 9.75vw;
-    height: auto;
-    border-radius: 50%;
-    margin-left: 6vw;
-    margin-top: 3.5vw;
+  width: 9.75vw;
+  height: auto;
+  border-radius: 50%;
+  margin-left: 6vw;
+  margin-top: 3.5vw;
 }
 
 #name-and-job {
-    display: flex;
-    flex-direction: column;
-    margin-left: 3.7vw;
-    margin-top: 4.5vw;
+  display: flex;
+  flex-direction: column;
+  margin-left: 3.7vw;
+  margin-top: 4.5vw;
 }
 
 #name {
-    font-family: Montserrat;
-    font-size: 3.2vw;
+  font-family: Montserrat;
+  font-size: 3.2vw;
 }
 
 #job {
-    font-family: Montserrat;
-    font-size: 2.6vw;
-    color: #828282;
-    margin-top: 1.5vw;
+  font-family: Montserrat;
+  font-size: 2.6vw;
+  color: #828282;
+  margin-top: 1.5vw;
 }
 
 #card-text {
-    font-family: Lora;
-    font-weight: bold;
-    font-size: 4.8vw;
-    width: 56vw;
-    margin-top: 4.9vw;
-    margin-left: 5vw;
+  font-family: Lora;
+  font-weight: bold;
+  font-size: 4.8vw;
+  width: 56vw;
+  margin-top: 4.9vw;
+  margin-left: 5vw;
 }
 
 footer {
-    font-family: 'Montserrat', sans-serif;
-    color: #A9A9A9;
-    margin-top: 40.4vw;
-    margin-bottom: 6.4vw;
-    text-align: center;
-    font-size: 3.7vw;
-  }
+  font-family: 'Montserrat', sans-serif;
+  color: #a9a9a9;
+  margin-top: auto;
+  margin-bottom: 6.4vw;
+  text-align: center;
+  font-size: 3.7vw;;
+}
