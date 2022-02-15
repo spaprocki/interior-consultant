@@ -242,52 +242,39 @@ footer {
   }
   
   #menu {
-    display: flex;
     flex-direction: column;
-    height: 207vw;
-    width: 0;
-    position: absolute;
-    overflow-x: hidden;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    transition: 0.5s;
-    background-color: black;
+    height: fit-content;
+    width: fit-content;
+    position: static;
+    transition: 0s;
+    background-color: #181719;
   }
-  
+
   #closeNav {
-    font-size: 5.9vw;
-    margin-top: 5.8vw;
-    margin-left: 89vw;
+    display: none;
   }
   
   #list-wrapper {
-    margin-top: 57vw;
+    margin-top: 0vw;
   }
   
   ul {
-    
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    list-style-type: none;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-left: 45vw;
   }
   
   li {
-    text-align: center;
-    width: fit-content;
     font-weight: 500;
-    font-size: 4.8vw;
-    margin-bottom: 8.5vw;
-    transition: 0.3s;
-  }
-  
-  li a {
-    text-decoration: none;
+    font-size: 1.25vw;
+    margin-bottom: auto;
+    transition: 0s;
+    margin-right: 5.97vw;
   }
   
   #home {
-    margin-bottom: 6.4vw;
+    margin-bottom: 0vw;
   }
   
   #home a {
@@ -297,9 +284,9 @@ footer {
   
   #line {
     height: 0px;
-    border: 2px solid;
+    border: 1px solid;
     background-color: white;
-    margin-top: 2.1vw;
+    margin-top: 0.5vw;
   }
   
   #text-wrapper {
