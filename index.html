@@ -41,18 +41,25 @@
       rel="stylesheet"
     />
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
     <title>Devchallenges</title>
   </head>
   <body>
     <div id="site-wrapper">
       <nav>
         <div id="logo">This interior</div>
-        <a id="open-button" href="javascript:void(0)">
-          <i class="fa-solid fa-bars fa-2x closebtn" onclick="openNav()"></i>
+        <a href="javascript:void(0)">
+          <span id="openNav" class="material-icons" onclick="openNav()">
+            menu
+            </span>
         </a>
         <div id="menu">
-          <a id="close-button" href="javascript:void(0)" onclick="closeNav()">
-            <i class="fa-solid fa-xmark"></i>
+          <a href="javascript:void(0)" onclick="closeNav()">
+            <span id="closeNav" class="material-icons">
+              close
+            </span>
           </a>
           <div id="list-wrapper">
              <ul>
@@ -71,7 +78,6 @@
             </li>
           </ul>
           </div>
-         
         </div>
       </nav>
       <main>
@@ -85,8 +91,8 @@
         </div>
         <div id="images-wrapper">
           <img src="images/photo1.png" alt="A photo of a well-designed room" />
-          <div id="card">
-            <div id="card-wrapper">
+          <div id="card-wrapper">
+            <div id="card">
               <img src="images/photo2.png" />
               <div id="name-and-job">
                 <p id="name">Aliza Webber</p>
