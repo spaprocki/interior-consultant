@@ -238,7 +238,7 @@ footer {
   }
   
   #openNav {
-    font-size: 5vw;
+    display: none;
   }
   
   #menu {
