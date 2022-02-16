@@ -48,7 +48,7 @@ nav {
   text-transform: uppercase;
 }
 
-#openNav {
+#open-nav {
   font-size: 5vw;
 }
 
@@ -66,7 +66,7 @@ nav {
   background-color: black;
 }
 
-#closeNav {
+#close-nav {
   font-size: 5.9vw;
   margin-top: 5.8vw;
   margin-left: 89vw;
@@ -250,7 +250,7 @@ footer {
     background-color: #181719;
   }
 
-  #closeNav {
+  #close-nav {
     display: none;
   }
   
