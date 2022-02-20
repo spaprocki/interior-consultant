@@ -36,7 +36,7 @@
 
 ## Overview
 
-![screenshot]((https://spaprocki.github.io/hosted-assets/interior-consultant.PNG)
+![screenshot](https://spaprocki.github.io/hosted-assets/interior-consultant.PNG)
 
 To complete this challenge, I've used the same method, as for the completion of the previous one - I've bound elements' sizes with viewport width. Respective sizes were represented in .css files in vw units. Working with icons was tricky at the beginning, but turned out to be quite simple in the end. Cover menu seems to be a thing I will use in my own projects in the future.
 
