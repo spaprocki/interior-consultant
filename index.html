@@ -19,7 +19,6 @@
     <link href="style.css" rel="stylesheet" />
     <link href="desktop-style.css" rel="stylesheet" />
 
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -70,23 +69,22 @@
         <div id="text-wrapper">
           <h1>Modern interior</h1>
           <p>
-            A full-Service residential & <br/>commercial interior design and <br/>
-            staging company offering <br/>
-            professional organizing & <br/>
+            A full-Service residential & <br />commercial interior design and
+            <br />
+            staging company offering <br />
+            professional organizing & <br />
             eco-services.
           </p>
           <a id="read-more" href="#">
             <p>Read more</p>
-            <span class="material-icons">
-            trending_flat
-            </span>
+            <span class="material-icons"> trending_flat </span>
           </a>
         </div>
         <div id="images-wrapper">
           <img src="images/photo1.png" alt="A photo of a well-designed room" />
           <div id="card-wrapper">
             <div id="card">
-              <img src="images/photo2.png" alt="Photo of Aliza Webber"/>
+              <img src="images/photo2.png" alt="Photo of Aliza Webber" />
               <div id="name-and-job">
                 <p id="name">Aliza Webber</p>
                 <p id="job">Interior designer</p>
@@ -110,6 +108,19 @@
       function closeNav() {
         document.getElementById('menu').style.width = '0vw';
       }
+
+
+      var mediaQueryList = window.matchMedia('(min-width: 768px)');
+
+      function screenTest(e) {
+        if (e.matches) {
+          openNav()
+        } else {
+          closeNav()
+        }
+      }
+
+      mediaQueryList.addListener(screenTest);
     </script>
   </body>
 </html>
